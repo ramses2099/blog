@@ -1,18 +1,24 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <p class="fs-1">home</p>
+    <p class="fs-3">{{name}}</p>
+    <p class="fs-3">{{age}}</p>    
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'HomeView',
-  components: {
-    HelloWorld
+  setup(){
+    console.log('setup hook')
+
+    let name = 'clone'
+    let age = 30
+    
+    //object
+    return { name, age}
   }
+  
 }
 </script>
