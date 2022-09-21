@@ -17,3 +17,15 @@ npm run build
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+### doc and process
+```
+ --Create project blog
+ vue create blog
+ -- create manually select features
+ [*] router
+ [ ] formater
+ 
+
+```
